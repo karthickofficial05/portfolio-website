@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-container {
+    min-height: 100vh;
+    background-color: #D8C3A5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 60px 0;
+    gap: 60px;
+    flex-direction: row-reverse;
+}
+
+.contact-container .big-circle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #ffd700, #ff6347);
+    border-radius: 50%;
+    top: -150px;
+    left: -150px;
+    z-index: -1;
+}
+
+.contact-container .form {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.contact-container .contact-info {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-container .contact-info .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 15%;
+}
+
+
+.contact-container .contact-info .info .information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+.contact-container .contact-info .social-media {
+    margin-top: 50px;
+}
+
+.contact-container .social-media .mail{
+    height: 25px;
+    width: 30px;
+    padding-right: 5px;
+    margin-top: 10px;
+    
+}
+
+.contact-container .social-media .icons{
+    height: 25px;
+    width: 30px;
+    padding-left: 5px;
+}
+
+
+.contact-container .contact-form {
+    width: 50%;
+    position: relative;
+    padding: 20px;
+}
+
+.contact-container .contact-form .circle {
+    position: absolute;
+    border-radius: 50%;
+    background:rgb(24, 22, 22);
+}
+
+.contact-container .contact-form .circle.one {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -50px;
+}
+
+.contact-container .contact-form .circle.two {
+    width: 150px;
+    height: 150px;
+    bottom: -80px;
+    left: -480px;
+}
+
+.contact-container .contact-form .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 12%;
+}
+
+.contact-container .input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact-container .input-container .input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-container .input-container .input:focus {
+    border-color: #ff6347;
+}
+
+.contact-container .input-container label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+    color: #777;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.contact-container .input-container span {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    color: #777;
+    font-size: 14px;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+
+.contact-container .input-container textarea {
+    min-height: 100px;
+    resize: none;
+}
+
+.contact-container .btn {
+    display: inline-block;
+    background:black;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-container .btn:hover {
+    background: #e5533d;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .contact-container .contact-info, 
+    .contact-container .contact-form {
+        width: 100%;
+    }
+
+    .contact-container .contact-form {
+        order: -1;
+    }
+
+    .contact-container .form {
+        flex-direction: column;
+    }
+
+    .contact-container .big-circle {
+        display: none;
+    }
+
+    .contact-container .contact-form .circle {
+        display: none;
+    }
+}
+
+
