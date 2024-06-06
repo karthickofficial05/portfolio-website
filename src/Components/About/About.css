@@ -9,7 +9,7 @@ html {
   flex-direction: column;
   gap: 1.5rem;
   padding: 20px 1rem;
-  background-color: #D8C3A5;
+  background-color: black;
   min-height: 100vh;
   box-sizing: border-box;
 }
@@ -18,10 +18,11 @@ html {
   font-size: 2.5rem;
   margin-top: 25px;
   text-align: center;
+  color: white;
 }
 
 .me {
-  color: saddlebrown;
+  color: white;
 }
 
 .about-img {
@@ -40,7 +41,7 @@ html {
   position: absolute;
   width: 18.5rem; /* Slightly larger than the image */
   height: 18.5rem; /* Slightly larger than the image */
-  border: 3px solid brown; /* Outline color */
+  border: 3px solid white; /* Outline color */
   border-radius: 50%;
   box-sizing: border-box;
   
@@ -51,7 +52,7 @@ html {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid brown;
+  border: 3px solid white;
 }
 
 @keyframes spin {
@@ -66,15 +67,18 @@ html {
 .about-content {
   text-align: center;
   padding: 0 1rem;
+  color: white;
 }
 
 .about-content h3 {
   font-size: 2rem;
+  color: white;
 }
 
 .about-content p {
   font-size: 1rem;
   margin: 1.5rem 0 2rem;
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -88,8 +92,8 @@ html {
   }
 
   .about-img::before {
-    width: 16rem; /* Adjusted size */
-    height: 16rem; /* Adjusted size */
+    width: 14.5rem; /* Adjusted size */
+    height: 14.5rem; /* Adjusted size */
   }
 
   .about-content h3 {

@@ -12,7 +12,6 @@ const Home = () => {
           <h1 className="title">
             <span>I'm Karthick<br /></span>
           </h1>
-          <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
           <span className="role">
             a <Typewriter
               loop
@@ -29,7 +28,7 @@ const Home = () => {
           </p>
           <div className="action__btns">
             <button>
-              <a href="/path-to-your-resume.pdf" className="downloadcv" download>Download CV</a>
+              <a href="/karthick_P_Resume.pdf" className="downloadcv" download>Download CV</a>
             </button>
             <button className="contact">
               <a href="#contact">Contact</a>
